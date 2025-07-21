@@ -56,6 +56,7 @@
         dots: true,
         items: 1,
         dotsData: true,
+        // autoplayTimeout: 5000,
         // items: 1,
         // loop: true,
         // autoplay: true,
