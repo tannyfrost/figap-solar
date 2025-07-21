@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel Example</title>
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="owl-carousel owl-theme">
+    <div class="item"><img src="{% static 'img/carousel-1.jpg' %}" alt=""></div>
+    <div class="item"><img src="{% static 'img/carousel-2.jpg' %}" alt=""></div>
+    <div class="item"><img src="{% static 'img/carousel-3.jpg' %}" alt=""></div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            nav: false,
+            dots: true
+        });
+    });
+</script>
+</body>
+</html>
