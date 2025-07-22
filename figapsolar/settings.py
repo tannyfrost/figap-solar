@@ -28,7 +28,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'render.com',
-    'figap-solar.onrender.com'
+    'figap-solar.onrender.com',
+    '127.0.0.1',
+
 ]
 
 
