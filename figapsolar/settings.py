@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-$&=p2%^tq6)r!fb79)&3_8y9290mg=7=u!npofn&y^io)w2h01
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'render.com'
+    'render.com',
+    'figap-solar.onrender.com'
 ]
 
 
